@@ -2494,9 +2494,8 @@ fn reveal_file(cx: &mut Context, path: Option<PathBuf>) {
                     },
                     None => {
                         editor.explorer = Some(ui::Explorer::new(cx)?);
-                        if let Some(explorer) = editor.explorer.as_mut() {
-                            explorer.reveal_current_file(cx)?;
-                        }
+                        let explorer = editor.explorer.as_mut().unwrap();
+                        explorer.reveal_current_file(cx)?;
                         Ok(())
                     }
                 })()
