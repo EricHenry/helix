@@ -87,15 +87,15 @@ mode.select = "SELECT"
 
 The `[editor.statusline]` key takes the following sub-keys:
 
-| Key           | Description                                                | Default                                                      |
-| ------------- | ---------------------------------------------------------- | ------------------------------------------------------------ |
-| `left`        | A list of elements aligned to the left of the statusline   | `["mode", "spinner", "file-name"]`                           |
-| `center`      | A list of elements aligned to the middle of the statusline | `[]`                                                         |
-| `right`       | A list of elements aligned to the right of the statusline  | `["diagnostics", "selections", "position", "file-encoding"]` |
-| `separator`   | The character used to separate elements in the statusline  | `"│"`                                                        |
-| `mode.normal` | The text shown in the `mode` element for normal mode       | `"NOR"`                                                      |
-| `mode.insert` | The text shown in the `mode` element for insert mode       | `"INS"`                                                      |
-| `mode.select` | The text shown in the `mode` element for select mode       | `"SEL"`                                                      |
+| Key           | Description | Default |
+| ---           | ---         | ---     |
+| `left`        | A list of elements aligned to the left of the statusline | `["mode", "spinner", "file-name", "file-modification-indicator"]` |
+| `center`      | A list of elements aligned to the middle of the statusline | `[]` |
+| `right`       | A list of elements aligned to the right of the statusline | `["diagnostics", "selections", "register", "position", "file-encoding"]` |
+| `separator`   | The character used to separate elements in the statusline | `"│"` |
+| `mode.normal` | The text shown in the `mode` element for normal mode | `"NOR"` |
+| `mode.insert` | The text shown in the `mode` element for insert mode | `"INS"` |
+| `mode.select` | The text shown in the `mode` element for select mode | `"SEL"` |
 
 The following statusline elements can be configured:
 
